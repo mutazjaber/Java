@@ -15,10 +15,10 @@ public class CafeJava {
 
         
         // Customer name variables (add yours below)
-        String customer1 = "Cindhuri";
-        String customer2 = "Sam";
-        String customer3 = "Jimmy";
-        String customer4 = "Noah";
+        String customer1 = "Cindhuri ";
+        String customer2 = "Sam ";
+        String customer3 = "Jimmy ";
+        String customer4 = "Noah ";
 
 
     
@@ -29,29 +29,29 @@ public class CafeJava {
         boolean isReadyOrder4 = true;
 
 
-    //    if(isReadyOrder1){
-    //      System.out.println( customer1 +readyMessage );
-    //    }
-    //    else{
-    //     System.out.println(customer1 + pendingMessage );
-    //    }
+       if(isReadyOrder1){
+         System.out.println( customer1 +readyMessage );
+       }
+       else{
+        System.out.println(customer1 + pendingMessage );
+       }
 
-    //    if(isReadyOrder4){
-    //      System.out.println(customer4 + readyMessage + displayTotalMessage + cappuccino );
-    //    }
-    //    else{
-    //     System.out.println(customer4 + pendingMessage );
-    //    }
+       if(isReadyOrder4){
+         System.out.println(customer4 + readyMessage + displayTotalMessage + cappuccino );
+       }
+       else{
+        System.out.println(customer4 + pendingMessage );
+       }
 
-    //     if(isReadyOrder2){
-    //         System.out.println(customer2 + readyMessage + displayTotalMessage + 2*cappuccino );
-    //     }
-    //     else{
-    //         System.out.println(customer4 + pendingMessage );
-    //     }
+        if(isReadyOrder2){
+            System.out.println(customer2 + readyMessage + displayTotalMessage + 2*cappuccino );
+        }
+        else{
+            System.out.println(customer4 + pendingMessage );
+        }
             
 
-        System.out.println(customer3 + displayTotalMessage + ( dripCaffeePrice - lattePrice) );
+        System.out.println(customer3 + isReadyOrder3+ displayTotalMessage + ( dripCaffeePrice - lattePrice) );
       
 
     }

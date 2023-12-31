@@ -6,7 +6,6 @@ public class AlfredQuotes {
         // You do not need to code here, this is an example method
         return "Hello, lovely to see you. How are you?";
     }
-    
         // public String guestGreeting(String name) {
             
         //     return String.format("Hello, %s . Lovely to see you.","Mutaz jaber") ;
