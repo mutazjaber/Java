@@ -6,9 +6,9 @@ public class PuzzleJava {
     
     public ArrayList<Integer> getTenRolls(){
         ArrayList<Integer> randoom = new ArrayList<>();
-        Random randMachine = new Random();
+        Random rand = new Random();
         for(int i =0; i < 10; i++){
-            randoom.add(randMachine.nextInt(20));
+            randoom.add(rand.nextInt(20));
 
         }
         return randoom;

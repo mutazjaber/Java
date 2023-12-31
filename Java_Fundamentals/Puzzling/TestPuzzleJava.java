@@ -10,10 +10,7 @@ public class TestPuzzleJava {
        System.out.println(generator.getRandomLetter());
        System.out.println(generator.generatePassword());
        System.out.println(generator.getNewPasswordSet(5));
-		
-    	        //..
-		// Write your other test cases here.
-		//..
+
 	}
 
     
