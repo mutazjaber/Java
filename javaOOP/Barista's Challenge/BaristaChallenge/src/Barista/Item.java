@@ -29,9 +29,7 @@ public class Item {
 	    public String toString() {
 	        return "Item [name=" + name + ", price=" + price + "]";
 	    }
-	    
-		
-	    
+
 	    
 	    // CONSTRUCTOR
 	    //   Takes a name and price as arguments 

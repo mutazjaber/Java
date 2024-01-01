@@ -9,10 +9,7 @@ public class Order {
 	    private boolean ready; // default value false
 	    private ArrayList<Item> items = new ArrayList<>();
 	    
-	    public Order () {
-	    	
-	    	
-	    }
+	 
 	    
 		public Order(String name, boolean ready, ArrayList<Item> items) {
 			super();

@@ -1,12 +1,20 @@
 package Barista;
+
+import java.util.ArrayList;
+
 public class Test {
 
 	public static void main(String[] args) {
 		
-		Order order1 = new Order();
+		Order order1 = new Order("mutaz",true , new ArrayList());
+//		Order order2 = new Order();
 		
-		order1.setName("Mutaz");
-		order1.setReady(true);
+//		order1.setName("Mutaz");
+//		order1.setName("Mutaz");
+//		order1.setReady(true);
+//		order1.setName("cundahuri");
+//		order1.setReady(false);
+		
 		
 		
 		
@@ -18,6 +26,8 @@ public class Test {
 		
 		order1.addItem(item1);
 		order1.addItem(item2);
+//		order2.addItem(item1);
+//		order2.addItem(item2);
 		
 		
 		
