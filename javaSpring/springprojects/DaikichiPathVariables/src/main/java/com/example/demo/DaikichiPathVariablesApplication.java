@@ -1,13 +1,13 @@
-package com.mutaz.hellohuman;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HelloHumanApplication {
+public class DaikichiPathVariablesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloHumanApplication.class, args);
+		SpringApplication.run(DaikichiPathVariablesApplication.class, args);
 	}
 
 }
