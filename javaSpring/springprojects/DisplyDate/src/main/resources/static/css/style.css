@@ -1,0 +1,24 @@
+
+
+
+.dashboard-links a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust margin as needed */
+    text-decoration: none;
+    padding: 8px;
+    background-color: #3498db; /* Change background color as needed */
+    color: #ffffff; /* Change text color as needed */
+    border-radius: 5px;
+}
+
+.dashboard-links a:hover {
+    background-color: #2980b9; /* Change hover background color as needed */
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+    margin: 0;
+}
