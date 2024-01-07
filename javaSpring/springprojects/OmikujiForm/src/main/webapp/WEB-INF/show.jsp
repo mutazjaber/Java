@@ -5,14 +5,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Omikuji</title>
+<title>Omikuj i</title>
 <style>
     body {
+    	margin-left:px;
+    	width: 300px ;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0;
-        
+        margin: 0;        
     }
 
     p {
@@ -25,7 +26,7 @@
 </head>
 <body>
     <h1>Here's Your Omikuji !</h1>
-    <p>
+    <p><br>
         In <c:out value="${number}"></c:out> years, you will live in <c:out value="${city}"></c:out> with Bob Dylan as your roommate,
         selling origamis for a <c:out value="${living}"></c:out>. The next time you see a <c:out value="${hobby}"></c:out>, you will have good luck.
         Also, You do not realize how happy you make others. Send and show a friend <c:out value="${Message}"></c:out>

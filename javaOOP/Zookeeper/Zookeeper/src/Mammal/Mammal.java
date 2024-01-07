@@ -1,11 +1,10 @@
 package Mammal;
 public class Mammal {
- protected int energy ;
+	protected int energy ;
 
 public Mammal(int energy) {
 	this.energy = energy;
 }
-
 
 public int getEnergy() {
 	return energy;
@@ -14,5 +13,4 @@ public int getEnergy() {
 public void setEnergy(int energy) {
 	this.energy = energy;
 }
- 
 }

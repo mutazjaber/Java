@@ -1,16 +1,14 @@
-/**
- * 
- */// script.js
 
-        document.addEventListener("DOMContentLoaded", function () {
-            var dateInfo = document.getElementById("date");
-            var timeInfo = document.getElementById("time");
+        document.addEventListener("DOMContentLoaded",
+        function () {
+            var date = document.getElementById("date");
+            var time = document.getElementById("time");
 
-            if (dateInfo) {
+            if (date) {
                 alert("This is the date template  " );
             }
 
-            if (timeInfo) {
+            if (time) {
                 alert("This is the time template  ");
             }
         });

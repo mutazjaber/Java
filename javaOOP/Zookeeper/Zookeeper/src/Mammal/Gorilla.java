@@ -1,8 +1,8 @@
 package Mammal;
 public class Gorilla extends Mammal {
 
-	public Gorilla(int energy) {
-		super(energy);
+public Gorilla(int energy) {
+	super(energy);
 	
 	}
 public void throwSomething() {
