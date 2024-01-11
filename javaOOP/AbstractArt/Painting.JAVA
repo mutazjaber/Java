@@ -1,24 +1,18 @@
-// inside of Painting.java
-public class Painting extends Art {
-    // TODO: implement Painting class
-    private string paintType ;
-    public String getPaintType(){
-        return this.paintType;
-    }
-    public void setPaintType(String type){
-        this.paintType = type;
 
-    }
-    public Painting(string title, string artist, int year, double price ,string paintType ){
-        super(title,artist,year,price);
-        this.paintType = paintType;
-    }
-    @override 
-    public void viewArt(){
-        System.out.println("Title : " + title);
-        System.out.println("Artist : " + artist);
-        System.out.println("Year created : "+ year);
-        System.out.println("Price : $" + price);
-        System.out.println("Paint Type : " + paintType);
-    }
-} 
+public class Painting extends Art {
+	private String paintType ;
+	public Painting(String paintType) {
+		this.paintType = paintType;
+		this.author = "mutaz";
+		this.description = "mutza paiting";
+		this.title = "mutaz art";
+	}
+	@Override
+	public void viewArt() { 
+		System.out.print("paintType : "+this.paintType+"\n");
+		System.out.print("Auther : "+this.author+"\n");
+		System.out.print("Piece Title : "+this.title+"\n");
+		System.out.print("Description : "+this.description+"\n");
+	}
+	
+}
