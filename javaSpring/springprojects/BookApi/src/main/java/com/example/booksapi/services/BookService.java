@@ -10,7 +10,7 @@ import com.example.booksapi.repository.BookRepository;
 @Service
 public class BookService {
  
- private final BookRepository bookRepository;
+ private final BookRepository bookRepository ;
 
  
  public BookService(BookRepository bookRepository) {
