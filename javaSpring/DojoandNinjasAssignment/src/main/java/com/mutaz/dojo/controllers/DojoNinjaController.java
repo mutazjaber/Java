@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,7 +36,7 @@ public class DojoNinjaController {
 	        } else {
 	        	dojoService.createDojo(dojo);
 	        	Long id = dojo.getId();
-	            return "redirect:/dojos/"+ id;
+	            return "redirect:/ninjas/new" ;
 	        }
 	    }
 	    
@@ -52,8 +53,15 @@ public class DojoNinjaController {
 	            return "createninja.jsp";
 	        } else {
 	        	ninjaService.createNinja(ninja);
-	            return "redirect:/ninjas/new";
+	            return "dojoninja.jsp";
 	        }      
+	        
+	    }
+	    @GetMapping("dojos/{id}")
+	    public String showDojo(@ModelAttribute("id") Long id, Model model) {
+	        Dojo dojo = dojoService.findDojo(id);
+	            model.addAttribute("dojo", dojo);
+	             return "dojoninja.jsp";
 	    }
 //	    @RequestMapping("/dojos/{ninja_id}")
 //	    public String NinjaId(@ModelAttribute("ninja") Ninja ninja, Model model) {

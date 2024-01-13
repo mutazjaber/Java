@@ -10,22 +10,24 @@
 <title>Dojo Ninja</title>
 </head>
 <body>
-	<table>
-		<tr>
-			<th>Burger Name</th>
-			<th>Restaurant Name</th>
-			<th>Rating(out of 5)</th>
-			<th>Action</th>
-		</tr>
-		 <c:forEach var="burger" items="${burgers}">
-		<tr>
-			<td>${ninja.getBurgerName()}</td>
-			<td>${ninja.getRestaurantname()}</td>
-			<td>${ninja.getRating()}</td>
-			<td><a href="/burger/{id}">edit</a></td>
-		</tr>
-		</c:forEach>
-	</table>
+<h1>Burbank Location Ninjas</h1>
+<h2 style="text-align: center;" > <c:out value="${dojo.name}"/> </h2>
+    <table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Age</th>
+        </tr>
+        </thead>
+        <c:forEach items="${dojo.ninjas}" var="dojo" >
+            <tr>
+                <td ><c:out value="${dojo.getFirstName()}" /></td>
+                <td><c:out value="${dojo.getLastName()}" /></td>
+                <td><c:out value="${dojo.getAge()}" /></td>
+            </tr>
+        </c:forEach>
+    </table>
 
 </body>
 </html>
