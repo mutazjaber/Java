@@ -31,7 +31,6 @@ public class DisplyDate {
         SimpleDateFormat sdf = new SimpleDateFormat("h:mm a");
         Date currentDate = new Date();
         model.addAttribute("time", sdf.format(currentDate));
-
         return "Time.jsp";
     }
 }

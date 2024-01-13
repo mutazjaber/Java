@@ -15,28 +15,8 @@
 </head>
 <body>
 
-	<table>
-		<tr>
-			<th>Burger Name</th>
-			<th>Restaurant Name</th>
-			<th>Rating(out of 5)</th>
-			<th>Action</th>
-		</tr>
-		 <c:forEach var="burger" items="${burgers}">
-		<tr>
-			<td>${burger.getBurgerName()}</td>
-			<td>${burger.getRestaurantName()}</td>
-			<td>${burger.getRating()}</td>
-			<td><a href="/edit/${burger.id}"> Edit </a></td>
-             <td><form:form action="/burgers/${burger.id}/delete" method="post" >
-                <input type="hidden" name="_method" value="delete"/>
-                <input class="btn btn-outline-danger" type="submit" value="Delete"/>
-              </form:form></td>
-		</tr>
-		</c:forEach>
-	</table>
 	Burger Tracker
-	<form:form action="/bureger/create" method="post" modelAttribute="burger">
+	<form:form action="/edit/${burger.id}" method="PUT" modelAttribute="burger">
     <p>
         <form:label path="burgerName">BurgerName</form:label>
         <form:errors path="burgerName"/>

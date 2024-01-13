@@ -15,10 +15,12 @@ public class HelloHumanAssignApplication {
 		
 		SpringApplication.run(HelloHumanAssignApplication.class, args);
 	}
+	
 	@RequestMapping("/")
 	public String index() {
 		return "Hello Human";
 	}
+	
     @RequestMapping("/name")
     public String name(@RequestParam(value="firstname") String name ,@RequestParam(value="lastname") String lastname) {
         return "Hello "  + name +" "+ lastname;

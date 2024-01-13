@@ -33,11 +33,15 @@ public class BurgerServices {
 	     Optional<Burger> optionalBurger = burgerRepository.findById(id);
 	     if(optionalBurger.isPresent()) {
 	         return optionalBurger.get();
-	     } else {
-	         return null;
-	     }
+	     }  
+	    return null;
+ 
 	     
 	 }
+	 public Burger editBurger(Burger b) {
+	     return burgerRepository.save(b);
+	 }
+	 
 	 public Burger updateBurger(Long id ,String burgerName ,String restaurantName, Integer rating ) {
 		 Optional<Burger> optionalBurger = burgerRepository.findById(id);
 		 if(optionalBurger.isPresent()) {
@@ -54,9 +58,11 @@ public class BurgerServices {
 			 return null;
 		 }
 
+
 	 }
-//	 public void deleteburger(Long id) {
-//		 burgerRepository.deleteById(id);
-//	 }
+	 
+	 public void deleteburger(Long id) {
+		 burgerRepository.deleteById(id);
+	 }
 
 }
