@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Show Book</title>
+</head>
+<body>
+<h1>Book Title :  ${book.title}</h1>
+<h2>Book Description : ${book.description}</h2>
+<h2>Book Language : ${book.language}</h2>
+<h2>Book number of pages : ${book.numberOfPages}</h2>
+
+
+</body>
+</html>
