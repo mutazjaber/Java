@@ -1,6 +1,9 @@
-package com.mutaz.loginregistration.models;
+package com.mutaz.bookclub.models;
+
 import java.util.Date;
+
 import org.springframework.format.annotation.DateTimeFormat;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,19 +26,19 @@ public class User {
 	private Long id;
 	
 	@NotEmpty(message="Username is required!")
-	@Size (min= 3 , max =128 , message ="Username must be between 2 and 128 characters"	)
+	@Size (min= 3 , max =128 , message ="Username must be between 2 and 12 characters"	)
 	private String userName ;
     @NotEmpty(message="Email is required!")
     @Email(message="Please enter a valid email!")
     private String email;
     
     @NotEmpty(message="Password is required!")
-    @Size(min=3, max=128, message="Password must be between 3 and 12 characters")
+    @Size(min=8, max=128, message="Password must be between 8 and 12 characters")
     private String password;
     
     @Transient
     @NotEmpty(message="Confirm Password is required!")
-    @Size(min=3, max=128	, message="Confirm Password must be between 3 and 128 characters")
+    @Size(min=3, max=128	, message="Confirm Password must be between 8 and 12 characters")
     private String confirm;
     
     @Column(updatable=false)

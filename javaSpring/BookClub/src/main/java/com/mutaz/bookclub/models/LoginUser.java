@@ -1,4 +1,4 @@
-package com.mutaz.loginregistration.models;
+package com.mutaz.bookclub.models;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
@@ -11,7 +11,7 @@ public class LoginUser {
     private String email;
     
     @NotEmpty(message="Password is required!")
-    @Size(min=3, max=128, message="Password must be between 8 and 128 characters")
+    @Size(min=8, max=128, message="Password must be between 3 and 128 characters")
     private String password;
     
     public LoginUser() {}
